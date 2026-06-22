@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --custom-width: 600px;   
+             /* creating a global variable */
+               }
+    .box{
+        height: 400px;
+        width: var(--custom-width);
+        background-color: aqua;
+        border: 3px solid black;
+    }
+    @media (min-width:500px){
+        /* Media query , if the condition satisfies do this */
+        .box{
+            background-color: greenyellow;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="box">hello cutie</div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Favicon, Meta, Title etc....</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta name="description" content="Creation of various Inputs">
+
+</head>
+<body>
+  <h2>Job application</h2>
+  <form>
+  <label for="name">Name:</label>
+  <input type="text" id="name" placeholder="enter here">
+  <br/>
+  <br/>
+  <label for="mail">Email:</label>
+  <input type="email" id="mail">
+  <br/>
+  <br/> 
+  <label for="num">Phone Number:</label>
+  <input type="tel" id="num">
+  <br/>
+  <br/>
+  <label for="resume">Upload your file:</label>
+  <input type="file" id="resume" name="resume">
+  <br/>
+  <br/>
+  <label for="counter">Experience(years)</label>
+  <input type="number" name="counter" id="counter" min="0" max="50">
+  <br/>
+  <br/>
+  <label for="education">Highest education:</label>
+  <select name="education" id="education">
+    <option value="">--Please choose an option--</option>
+    <option value="High school">High school</option>
+    <option value="Play school">Play school</option>
+  </select>
+  <br/>
+  <br/>
+  <fieldset>
+    <legend>Availability</legend>
+    <label for="radio">Yes</label>
+    <input type="radio" name="radio" id="radio">
+
+    <label for="radio2">No</label>
+    <input type="radio" name="radio" id="radio2">
+  </fieldset>
+
+
+  <label for="story">Additional Comments:</label>
+  <br/>
+  <textarea id="story" name="story" rows="3" cols="50"></textarea>
+  <br/>
+  <br/>
+  <input type="submit" value="submit">
+  <br/>
+  <span>uwu</span>
+</form>
+</body>
+</html>

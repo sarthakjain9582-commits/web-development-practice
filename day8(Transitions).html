@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        .box{
+            height: 400px;
+            width: 400px;
+            background-color: beige;
+            border: 2px solid black;
+
+            /* transition-property: all;
+            transition-duration: 4s;
+            /* transition-delay: 1s; 
+            transition-timing-function: ease-out;
+            
+            */
+
+
+            /* shorthand notation */
+            /* transition: all 2s ease-in 5s;
+             */
+
+            /* transition: width 2s, height 5s; */
+            transition: all 2s ease;
+        }
+
+
+        .box:hover{
+            /* width: 1800px;
+            height: 900px; */
+            background-color: blue;
+            /* transform: rotate(360deg); */
+        /* transform: scale(2);
+        */
+
+        /* transform: scale(0.5);
+        transform: rotate(45deg); */
+
+        /* transform: skew(-45deg); */
+
+        transform: translate(500px, 500px);
+        }
+
+    .container{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <p> This is CodeHelp's box </p>
+        </div>
+    </div>
+</body>
+</html>
