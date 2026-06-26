@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    max-width: 65vw;
+    padding: 2rem 1rem;
+    margin: 0 auto;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+.header_container{
+    margin-bottom: 2.8rem;
+}
+
+.header_title{
+    margin-bottom: 1rem;
+    font-size: 1.7rem;
+    line-height: 1.6rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.header_description{
+    max-width: 800px;
+    color: grey;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.main_container{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(1, 1fr);   
+    align-items: start;
+    margin-top: 1.5rem;
+}
+/* Remember to fix the main container grid style when width decreases */
+@media(min-width:650px) {
+    .main_container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(min-width:1080px) {
+    .main_container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media(min-width:1340px) {
+    .main_container{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.card_container{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card_image_container{
+    position: relative;
+    overflow: hidden;
+    height: 7rem;
+}
+
+@media (min-width: 768px){      
+    /* remember to fix image height when width goes short */
+    .card_image_container{
+        height: 9rem;
+    }
+}
+
+.card_image{
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.card_title_container{
+    display: flex;
+    flex-direction: column;
+    padding:0.8rem;
+    text-align: center;
+}
+
+.card_container:hover .card_image{    
+    /* remember image zooms in a bit when mouse hovers over the container */
+    transform: scale(1.1);
+    transition-duration: 150ms;
+}
+
+.card_title{
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(10, 10, 10);
+    margin-bottom: 0.3rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.hoverin:hover .card_title{
+    color: rgb(58, 58, 178);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.card_des{
+    color: rgb(41, 40, 40);
+    font-size: 0.8rem;
+    margin-top: 0.4rem;
+    margin-bottom: 0.3rem;
+}
+
+.card_footer_container{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0.7rem;
+    align-items: center;
+    margin-top: auto;
+}
+
+.author_container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.author_avatar_container{
+    height: 2rem;
+    width: 2rem;
+    overflow: hidden;
+    border: 1px solid rgb(111, 110, 110);
+    border-radius: 50%;
+    background-color: rgb(226, 218, 218);
+}
+
+.author_avatar_container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.author_info_container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+}
+
+.author_name{
+    color: rgb(53, 53, 184);
+    font-size: 0.7rem;
+}
+
+.author_date{
+    color: rgb(158, 155, 155);
+    font-size: 0.6rem;
+}
+
+.card_tag_container{
+    font-size: 0.9rem;
+    border: 1px solid rgb(98, 97, 97);
+    border-radius: 2px;
+    line-height: 1.2rem;
+    padding: 0.2rem 0.4rem;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    color: rgb(66, 66, 66);
+}
